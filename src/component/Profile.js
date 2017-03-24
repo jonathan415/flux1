@@ -9,13 +9,13 @@ class Profile extends Component {
     }
 
     changeAge() {
-        MyAction.changeAge('ben');
+        MyAction.changeAge('88');
     }
 
     changeAgeAndGender(newAge, newGender) {
-        MyAction.changeAgeAndGender(newAge, newGender);
+        MyAction.changeAge(newAge);
+        MyAction.changeGender(newGender);
     }
-
 
     render() {
         let hobbies = [];

@@ -15,7 +15,7 @@ class MyStore extends EventEmitter {
     }
 
     getName(){
-        return this.age;
+        return this.name;
     }
     setName(newName){
         this.name = newName;
@@ -64,8 +64,7 @@ class MyStore extends EventEmitter {
     }
 
     getHobbies(newHobbies){
-        this.hobbies = newHobbies;
-        this.emit('change');
+        return this.hobbies;
     }
     setHobbies(newHobbies){
         this.name = newHobbies;

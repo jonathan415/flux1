@@ -16,14 +16,6 @@ class MyAction {
         });
     }
 
-    changeAgeAndGender(newAge, newGender) {
-        dispatcher.dispatch({
-            type: 'change_my_age',
-            name: newAge,
-            gender: newGender
-        });
-    }
-
 }
 
 const yAction = new MyAction();
