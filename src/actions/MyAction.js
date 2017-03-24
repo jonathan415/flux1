@@ -12,7 +12,22 @@ class MyAction {
     changeAge(newAge) {
         dispatcher.dispatch({
             type: 'change_my_age',
-            name: newAge,
+            age: newAge,
+        });
+    }
+
+    changeGender(newAge) {
+        dispatcher.dispatch({
+            type: 'change_my_age',
+            age: newAge,
+        });
+    }
+
+    changeAgeAndGender(newAge, newGender) {
+        dispatcher.dispatch({
+            type: 'change_my_age',
+            age: newAge,
+            gender: newGender
         });
     }
 

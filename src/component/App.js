@@ -22,7 +22,6 @@ import MyStore from '../stores/MyStore.js';
 //      render()
 
 class App extends Component {
-
     constructor(props) {
         super(props);
 

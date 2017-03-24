@@ -1,7 +1,6 @@
 import {EventEmitter} from 'events';
 import dispatcher from '../dispatcher.js';
 
-
 class MyStore extends EventEmitter {
     constructor(){
         super();
@@ -13,6 +12,7 @@ class MyStore extends EventEmitter {
         this.country = 'US';
         this.hobbies = ['chess', 'table tennis', 'cricket', 'movies'];
     }
+
 
     getName(){
         return this.name;

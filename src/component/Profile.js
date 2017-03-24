@@ -32,7 +32,12 @@ class Profile extends Component {
 
                 <button onClick={() => {MyAction.changeAgeAndGender(23, 'female')}}>Change My Age</button>
                 <br />
-                My name is {this.props.age}
+                My age is {this.props.age}
+                <br />
+
+                <button onClick={this.changeAgeAndGender.bind(this, 24, 'female2')}>Change My Age and Gender</button>
+                <br />
+                My age is {this.props.age}. My gender is: {this.props.gender}
                 <br />
 
                 <button>Change My Gender</button>
